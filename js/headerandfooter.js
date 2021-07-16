@@ -133,7 +133,7 @@ $(function () {
     function validate(data) {
       if (data.code == 0) {
         localStorage.setItem("userInfo", JSON.stringify(data.userInfo));
-        window.location.href = "../personalcenter/personalcenter.html";
+        window.location.href = "./personalcenter/personalcenter.html";
       } else {
         alert("No");
       }
