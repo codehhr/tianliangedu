@@ -1,0 +1,174 @@
+:root {
+  --main-width: 1200px;
+}
+.breadcrumb-nav {
+  margin: 0 auto;
+  padding: 0;
+  max-width: var(--main-width);
+  overflow: hidden;
+}
+.breadcrumb-nav .breadcrumb {
+  margin: 0;
+}
+.breadcrumb-nav .breadcrumb a {
+  color: #00000073;
+  font-size: 14px;
+}
+.course-detail {
+  margin: 0 auto;
+  max-width: var(--main-width);
+}
+.course-detail .introduce {
+  padding: 20px;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.course-detail .introduce .cover {
+  margin-right: 40px;
+  width: 386px;
+  height: 220px;
+  background-size: cover !important;
+}
+.course-detail .introduce .introduce-content {
+  width: calc(100% - 380px);
+  height: 220px;
+  position: relative;
+}
+.course-detail .introduce .introduce-content .collection {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 110px;
+  height: 30px;
+  color: #999999;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #999999;
+}
+.course-detail .introduce .introduce-content .collection svg {
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+}
+.course-detail .introduce .introduce-content p {
+  height: 40px;
+  line-height: 40px;
+  color: #666666;
+}
+.course-detail .introduce .introduce-content p svg {
+  position: relative;
+  top: -4px;
+  margin: 0 1px;
+  vertical-align: middle;
+  color: #fadb14;
+  font-size: 20px;
+}
+.course-detail .introduce .introduce-content p svg:nth-of-type(5) {
+  color: #dbdbdb;
+}
+.course-detail .introduce .introduce-content .is-free {
+  font-size: 24px;
+  color: #00cf8c;
+}
+.course-detail .introduce .introduce-content .play {
+  position: absolute;
+  bottom: 2px;
+  width: 160px;
+  height: 45px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #00cf8c;
+  border: none;
+  outline: none;
+}
+.course-detail .course-detail-section {
+  margin: 0 auto 20px;
+  width: var(--main-width);
+  margin-top: 20px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.course-detail .course-detail-section .course-detail-title {
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 45px;
+  border-bottom: 1px solid #dadada;
+  user-select: none;
+}
+.course-detail .course-detail-section .course-detail-title > div {
+  margin-right: 32px;
+  padding: 0 20px;
+  height: 100%;
+  line-height: 44px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+.course-detail .course-detail-section .course-detail-title .line {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 100px;
+  height: 2px;
+  background-color: #23db9b;
+  transition: all 0.4s;
+}
+.course-detail .course-detail-section .course-detail-content {
+  width: 100%;
+  overflow-x: hidden;
+}
+.course-detail .course-detail-section .course-detail-content .course-detail-content-inner {
+  width: 300%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+.course-detail .course-detail-section .course-detail-content .course-detail-content-inner > div {
+  margin: 20px;
+  width: 100%;
+}
+.course-detail .course-detail-section .course-detail-content .course-detail-content-inner .course-section {
+  width: 100%;
+  overflow-x: hidden;
+}
+.course-detail .course-detail-section .course-detail-content .course-detail-content-inner .course-section .sections-ul {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.course-detail .course-detail-section .course-detail-content .course-detail-content-inner .course-section .sections-ul .sections-li {
+  width: 100%;
+}
+.course-detail .course-detail-section .course-detail-content .course-detail-content-inner .course-section .sections-ul .sections-li .sub-sections-ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.course-detail .course-detail-section .course-detail-content .course-detail-content-inner .course-section .sections-ul .sections-li .sub-sections-ul a {
+  width: 100%;
+}
+.course-detail .course-detail-section .course-detail-content .course-detail-content-inner .course-section .sections-ul .sections-li .sub-sections-ul a .sub-sections-li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #000000a6;
+}
+.course-detail-title-click-active {
+  border-bottom: 2px solid #23db9b;
+}

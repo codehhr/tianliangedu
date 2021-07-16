@@ -1,0 +1,434 @@
+:root {
+  --main-width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+a {
+  display: block;
+  text-decoration: none !important;
+}
+ul {
+  list-style: none !important;
+}
+img,
+svg {
+  cursor: pointer;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+/* header start */
+header {
+  margin: 0;
+  width: 100vw;
+  background-color: #ffffff;
+}
+header .header-content {
+  margin: 0 auto;
+  width: var(--main-width);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .header-content .categories {
+  padding: 28px 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+header .header-content .categories > div {
+  position: relative;
+  margin: 0 30px;
+  transition: all 1s;
+}
+header .header-content .categories > div:hover a {
+  color: #00cf8c;
+}
+header .header-content .categories > div:nth-of-type(3) {
+  margin-left: 10px;
+}
+header .header-content .categories > div a {
+  color: #000000;
+  line-height: 20px;
+}
+header .header-content .categories a.hover-active {
+  color: #00cf8c;
+}
+header .header-content .categories .categories-menu {
+  position: relative;
+  z-index: 99;
+}
+header .header-content .categories .categories-menu .title {
+  display: flex;
+  align-items: center;
+}
+header .header-content .categories .categories-menu .title svg {
+  margin: 0 2px;
+  color: #000000;
+}
+header .header-content .categories .categories-menu .title:hover svg {
+  color: #00cf8c;
+}
+header .header-content .categories .categories-menu .course-list {
+  position: absolute;
+  top: 30px;
+  width: 160px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #a9acabd3;
+}
+header .header-content .categories .categories-menu .course-list li {
+  padding: 0 12px;
+  height: 36px;
+  background-color: #ffffff;
+}
+header .header-content .categories .categories-menu .course-list li a {
+  line-height: 36px;
+  height: 100%;
+  font-size: 14px;
+  color: #000000a6;
+}
+header .header-content .categories .categories-menu .course-list li:hover {
+  background-color: #dff3ec;
+}
+header .header-content .categories .categories-menu .course-list li:hover a {
+  color: #1da57a;
+}
+header .header-content svg {
+  color: #ff0000;
+}
+header .header-content .search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  height: 38px;
+  border: 1px solid #b8b8b8;
+  border-radius: 20px;
+  overflow: hidden;
+}
+header .header-content .search input {
+  padding: 0 14px;
+  width: 100%;
+  height: inherit;
+  border: none;
+  outline: none;
+}
+header .header-content button {
+  width: 100px;
+  height: inherit;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #00cf8c;
+  color: #ffffff;
+}
+header .header-content button svg {
+  color: #ffffff;
+}
+header .header-content .entrance {
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-content .entrance svg:nth-of-type(1) {
+  color: #a0a0a0;
+}
+header .header-content .entrance svg:nth-of-type(2) {
+  font-size: 2em;
+  color: #bebebe;
+}
+header .header-content .entrance .split {
+  margin: 0 16px;
+  width: 2px;
+  height: 60%;
+  background-color: #c7c7c7;
+}
+header .header-content .entrance .signup-signin a {
+  padding: 4px 10px;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 14px;
+}
+header .header-content .entrance .signup-signin a:hover {
+  background-color: #ebebeb;
+}
+header .header-content .entrance .signup-signin #modal-container-signin,
+header .header-content .entrance .signup-signin #modal-container-signup {
+  margin: 120px auto;
+  user-select: none;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 60%;
+  overflow: hidden;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .form-close-btn,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-close-btn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 10px 20px;
+  width: auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #000000;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .form-close-btn:hover,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-close-btn:hover {
+  background-color: #c7c7c7a6;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .form-title,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-title {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .form-title button,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-title button {
+  padding: 10px 0;
+  width: 140px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #000000a6;
+  border-bottom: 2px solid transparent;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .form-content-inner,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-content-inner {
+  width: 200%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.4s;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .form-content-inner .normal-login,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-content-inner .normal-login,
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .form-content-inner .tel-login,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-content-inner .tel-login {
+  padding: 20px;
+  width: 100%;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .formbox,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .formbox {
+  margin: 0 auto 20px;
+  padding: 0 10px;
+  width: 100%;
+  border: 1px solid #c4c4c4a6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .formbox svg,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .formbox svg {
+  font-size: 14px;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .formbox input,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .formbox input {
+  padding: 0 10px;
+  width: 100%;
+  height: 32px;
+  outline: none;
+  border: none;
+  transition: all 0.4s;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .formbox input::placeholder,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .formbox input::placeholder {
+  color: #999999;
+  font-size: 12px;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .get-signin-verificationcode,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .get-signin-verificationcode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .get-signin-verificationcode .formbox,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .get-signin-verificationcode .formbox {
+  margin: 0;
+  width: auto;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .get-signin-verificationcode .formbox input,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .get-signin-verificationcode .formbox input {
+  width: 100%;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .get-signin-verificationcode button,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .get-signin-verificationcode button {
+  margin-left: 10px;
+  padding: 0 10px;
+  line-height: 32px;
+  height: 100%;
+  font-size: 12px;
+  border-radius: 4px;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .signin-btn,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .signin-btn,
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .signup-btn,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .signup-btn {
+  margin: 10px 0;
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .form-bottom,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-bottom {
+  padding: 5px 2px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-content .entrance .signup-signin #modal-container-signin .modal-content .form-bottom button,
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-bottom button {
+  padding: 0;
+  width: auto;
+  font-size: 14px;
+  background-color: transparent;
+  color: #999999;
+  border-radius: 10px;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content {
+  padding: 0 20px;
+  width: 66%;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-title {
+  margin-bottom: 16px;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-title button {
+  font-size: 14px;
+  height: 48px;
+  color: #00cf8c;
+  border-bottom: 2px solid #00cf8c;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-item label {
+  margin-right: 10px;
+  min-width: 20%;
+  height: 100%;
+  text-align: right;
+  font-size: 14px;
+  line-height: 52px;
+  color: #000000d9;
+  font-weight: 500;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-item label::before {
+  margin: 0 2px;
+  content: "*";
+  display: inline-block;
+  color: #f5222d;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-item .formbox {
+  margin: 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .get-signup-verificationcode {
+  margin: 0;
+  padding: 2px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .get-signup-verificationcode input {
+  margin-left: 2px;
+  height: 100%;
+  height: 34px;
+  border: 1px solid #c4c4c4a6;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .get-signup-verificationcode input:focus {
+  box-shadow: 0 0 4px 2px #00cf8ca6;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .get-signup-verificationcode button {
+  margin-left: 10px;
+  width: 200px;
+  height: 32px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+header .header-content .entrance .signup-signin #modal-container-signup .modal-content .form-bottom {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+/* header end */
+/* footer start */
+.footer-stay-box {
+  height: 200px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px 0;
+  min-width: 100vw;
+  height: 200px;
+  background-color: #444545;
+  color: #999999;
+}
+footer .friend-link {
+  margin: 0 auto;
+  padding: 0;
+  width: var(--main-width);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .friend-link .friend-link-title {
+  margin: 20px 0 18px;
+  font-size: 24px;
+}
+footer p.fridendslink {
+  width: var(--main-width);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .fridendslink span {
+  display: inline-block;
+  margin: 0 32px 0 0;
+}
+footer .fridendslink a {
+  color: #999999;
+}
+footer .footer-line {
+  margin: 36px auto;
+  width: 80%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+footer .copyright {
+  text-align: center;
+}
+/* footer end */

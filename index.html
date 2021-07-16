@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/headerandfooter.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./iconfont/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="logo"><img src="./images/logo-header.png" alt="" /></div>
+      <div class="search">
+        <input type="text" name="" id="" placeholder="搜索课程" />
+        <button>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+          <span>搜索</span>
+        </button>
+      </div>
+      <!-- 登录入口 start -->
+      <div class="entrance">
+        <svg class="icon" aria-hidden="true">
+          <use class="" xlink:href="#icon-cart"></use>
+        </svg>
+        <div class="split">|</div>
+        <div class="signup-signin">
+          <!-- form 弹出框 start -->
+
+          <!-- 登录 start -->
+          <a
+            id="modal-0"
+            href="#modal-container-signin"
+            role="button"
+            class="btn"
+            data-toggle="modal"
+            >登录</a
+          >
+
+          <div
+            class="modal fade"
+            id="modal-container-signin"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <button
+                  class="btn btn-default form-close-btn"
+                  data-dismiss="modal"
+                >
+                  X
+                </button>
+                <div class="form-title">
+                  <button>普通登录</button>
+                  <button>手机登录</button>
+                </div>
+                <div class="form-content-inner">
+                  <div class="normal-login">
+                    <div class="formbox">
+                      <svg
+                        data-v-c2c1363a=""
+                        viewBox="64 64 896 896"
+                        data-icon="user"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        focusable="false"
+                        class=""
+                      >
+                        <path
+                          d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"
+                        ></path>
+                      </svg>
+                      <input
+                        type="text"
+                        id="username"
+                        placeholder="请输入账号"
+                      />
+                    </div>
+                    <div class="formbox">
+                      <svg
+                        data-v-c2c1363a=""
+                        viewBox="64 64 896 896"
+                        data-icon="lock"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        focusable="false"
+                        class=""
+                      >
+                        <path
+                          d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 1 0-56 0z"
+                        ></path>
+                      </svg>
+                      <input
+                        type="password"
+                        id="password"
+                        placeholder="请输入密码"
+                      />
+                    </div>
+                    <button class="signin-btn">登录</button>
+                    <div class="form-bottom">
+                      <button class="go-signup-btn">立即注册</button>
+                      <button>忘记密码</button>
+                    </div>
+                  </div>
+                  <div class="tel-login">
+                    <div class="formbox">
+                      <svg
+                        data-v-c2c1363a=""
+                        viewBox="64 64 896 896"
+                        data-icon="user"
+                        width="1em"
+                        height="1em"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        focusable="false"
+                        class=""
+                      >
+                        <path
+                          d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"
+                        ></path>
+                      </svg>
+                      <input type="tel" placeholder="请输入手机号" />
+                    </div>
+                    <div class="get-signin-verificationcode">
+                      <div class="formbox">
+                        <svg
+                          data-v-c2c1363a=""
+                          viewBox="64 64 896 896"
+                          data-icon="lock"
+                          width="1em"
+                          height="1em"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          focusable="false"
+                          class=""
+                        >
+                          <path
+                            d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 1 0-56 0z"
+                          ></path>
+                        </svg>
+                        <input type="password" placeholder="请输入验证码" />
+                      </div>
+                      <button>获取验证码</button>
+                    </div>
+                    <button class="signin-btn">登录</button>
+                    <div class="form-bottom">
+                      <button class="go-signup-btn">立即注册</button>
+                      <button>忘记密码</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 登录 end -->
+
+          <!-- 注册 start -->
+          <a
+            id="modal-1"
+            href="#modal-container-signup"
+            role="button"
+            class="btn"
+            data-toggle="modal"
+            >注册</a
+          >
+
+          <div
+            class="modal fade"
+            id="modal-container-signup"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <button
+                  type="button"
+                  class="btn btn-default form-close-btn"
+                  data-dismiss="modal"
+                >
+                  X
+                </button>
+                <div class="form-title">
+                  <button>普通注册</button>
+                </div>
+                <div class="form-item">
+                  <label for="">帐号:</label>
+                  <div class="formbox">
+                    <input
+                      type="text"
+                      id="signup-username"
+                      placeholder="请输入账号(6-20位，非纯数字)!"
+                    />
+                  </div>
+                </div>
+                <div class="form-item">
+                  <label for="">密码:</label>
+                  <div class="formbox">
+                    <input
+                      type="password"
+                      id="signup-password"
+                      placeholder="请输入你的密码(6-20位，非汉字)!"
+                    />
+                  </div>
+                </div>
+                <div class="form-item">
+                  <label for="">确认密码:</label>
+                  <div class="formbox">
+                    <input
+                      type="password"
+                      id="signup-confirm-password"
+                      placeholder="请再次输入你的密码!"
+                    />
+                  </div>
+                </div>
+                <div class="form-item">
+                  <label for="">昵称:</label>
+                  <div class="formbox">
+                    <input
+                      type="text"
+                      id="signup-nickname"
+                      placeholder="请输入昵称"
+                    />
+                  </div>
+                </div>
+                <div class="form-item">
+                  <label for="">手机号码:</label>
+                  <div class="formbox">
+                    <div class="phone-localtion">+86</div>
+                    <input
+                      type="tel"
+                      id="signup-tel"
+                      placeholder="请输入你的手机号!"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-item get-signup-verificationcode">
+                  <label for="">验证码:</label>
+                  <div class="formbox get-signup-verificationcode">
+                    <input
+                      type="text"
+                      id="signup-code"
+                      placeholder="请输入验证码！!"
+                    />
+                    <button>获取验证码</button>
+                  </div>
+                </div>
+
+                <button class="signup-btn">注册</button>
+                <div class="form-bottom">
+                  <button class="go-signin-btn">去登录</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 注册 end -->
+        </div>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-user"></use>
+        </svg>
+      </div>
+      <!-- 登录入口 end -->
+    </header>
+    <!-- 课程导航 start -->
+    <section class="categories">
+      <div class="course home"><a href="#">首页</a></div>
+      <div class="course categories-menu">
+        <div class="title">
+          <a href="#">课程分类</a>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-dropdown"></use>
+          </svg>
+        </div>
+        <ul class="course-list"></ul>
+      </div>
+      <div class="course exclusive"><a href="#">专属课程</a></div>
+    </section>
+    <!-- 课程导航 end -->
+
+    <!-- header end -->
+
+    <!-- 轮播图 start -->
+
+    <div id="carousel-0" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators"></ol>
+      <div class="carousel-inner"></div>
+      <a class="left carousel-control" href="#carousel-0" data-slide="prev"
+        ><span class="glyphicon glyphicon-chevron-left"></span
+      ></a>
+      <a class="right carousel-control" href="#carousel-0" data-slide="next"
+        ><span class="glyphicon glyphicon-chevron-right"></span
+      ></a>
+    </div>
+
+    <!-- 轮播图 end -->
+
+    <!-- 直播课程 start -->
+    <section class="live-course">
+      <div class="live-course-title">直播课程</div>
+      <div class="live-course-content">
+        <!-- preview start -->
+        <div class="preview">
+          <div class="preview-item" style="display: flex">
+            <div class="preview-item-title">求职技巧之重难点问题解剖与解决</div>
+            <div class="status">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-done"></use>
+              </svg>
+              <span>直播结束</span>
+            </div>
+            <button>直播结束</button>
+          </div>
+          <div class="preview-item">
+            <div class="preview-item-title">IT开发编程方向之职业规划</div>
+            <div class="status">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-done"></use>
+              </svg>
+              <span>直播结束</span>
+            </div>
+            <button>直播结束</button>
+          </div>
+          <div class="preview-item">
+            <div class="preview-item-title">研究生复试之高效准备简历的方法</div>
+            <div class="status">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-done"></use>
+              </svg>
+              <span>直播结束</span>
+            </div>
+            <button>直播结束</button>
+          </div>
+          <div class="preview-item">
+            <div class="preview-item-title">十大经典排序之Part-6-完结篇</div>
+            <div class="status">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-done"></use>
+              </svg>
+              <span>直播结束</span>
+            </div>
+            <button>直播结束</button>
+          </div>
+          <div class="preview-item">
+            <div class="preview-item-title">
+              jdk1.8-新特性之函数式接口与方法引用
+            </div>
+            <div class="status">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-done"></use>
+              </svg>
+              <span>直播结束</span>
+            </div>
+            <button>直播结束</button>
+          </div>
+        </div>
+        <!-- preview end -->
+
+        <ul class="live-course-list">
+          <li class="live-course-item">
+            <div class="bar"></div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-done"></use>
+            </svg>
+            <div>直播结束</div>
+            <div>求职技巧之重难点问题解剖与解决</div>
+          </li>
+          <li class="live-course-item">
+            <div class="bar"></div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-done"></use>
+            </svg>
+            <div>直播结束</div>
+            <div>IT开发编程方向之职业规划</div>
+          </li>
+          <li class="live-course-item">
+            <div class="bar"></div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-done"></use>
+            </svg>
+            <div>直播结束</div>
+            <div>研究生复试之高效准备简历的方法</div>
+          </li>
+          <li class="live-course-item">
+            <div class="bar"></div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-done"></use>
+            </svg>
+            <div>直播结束</div>
+            <div>十大经典排序之Part-6-完结篇</div>
+          </li>
+          <li class="live-course-item">
+            <div class="bar"></div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-done"></use>
+            </svg>
+            <div>直播结束</div>
+            <div>jdk1.8-新特性之函数式接口与方法引用</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 直播课程 end -->
+
+    <!-- 免费课程 start -->
+    <section class="free-course">
+      <div class="free-course-title">
+        <div></div>
+        <div class="free-course-title-name">免费课程</div>
+        <div class="more">
+          <span><a href="#">更多</a></span>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-more"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="free-course-content"></div>
+    </section>
+    <!-- 免费课程 end -->
+
+    <!-- 精品课程 start -->
+    <section class="high-quality-course">
+      <div class="high-quality-course-title">
+        <div></div>
+        <div class="high-quality-course-title-name">精品课程</div>
+        <div class="more">
+          <span><a href="#">更多</a></span>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-more"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="high-quality-course-content"></div>
+    </section>
+    <!-- 精品课程 end -->
+
+    <!-- 限时折扣课程 start -->
+    <section class="discountCoursesForLimitedTime-course">
+      <div class="discountCoursesForLimitedTime-course-title">
+        <div></div>
+        <div class="discountCoursesForLimitedTime-course-title-name">
+          限时折扣课程
+        </div>
+        <div class="more">
+          <span><a href="#">更多</a></span>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-more"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="discountCoursesForLimitedTime-course-content"></div>
+    </section>
+    <!-- 限时折扣课程 end -->
+
+    <!-- 头条精选 start -->
+    <div class="headlineOfSelected-course">
+      <div class="headlineOfSelected-course-title">
+        <div class="headlineOfSelected-course-title-name">头条精选</div>
+        <div class="more">
+          <span><a href="#">更多</a></span>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-more"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="headlineOfSelected-course-content">
+        <div class="headlineOfSelected-course-item">
+          <img src="./images/headlineOfSelected1.png" alt="" />
+          <p>
+            <a href="#">
+              天亮云课堂小程序端即将下线，请到PC端和M站学习交流！！！</a
+            >
+          </p>
+        </div>
+        <div class="headlineOfSelected-course-item">
+          <img src="./images/headlineOfSelected.jpg" alt="" />
+          <p><a href="#"> 小米集团-科大16级韩同学成长经历分享</a></p>
+        </div>
+        <div class="headlineOfSelected-course-item">
+          <img src="./images/headlineOfSelected.jpg" alt="" />
+          <p><a href="#"> 米联科技-科大16级郭同学成长经历分享</a></p>
+        </div>
+        <div class="headlineOfSelected-course-item">
+          <img src="./images/headlineOfSelected.jpg" alt="" />
+          <p><a href="#"> 万向思维-科大16级支同学成长经历分享</a></p>
+        </div>
+        <div class="headlineOfSelected-course-item">
+          <img src="./images/headlineOfSelected.jpg" alt="" />
+          <p><a href="#"> 尚云科技-科大15级王同学成长经历分享2</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- 头条精选 end -->
+
+    <!-- 友情链接 start -->
+    <footer>
+      <div class="friend-link">
+        <div class="friend-link-title">友情链接 :</div>
+        <div class="fridendslink"></div>
+        <div class="line"></div>
+        <div class="copyright">
+          Copyright &copy; 2017-2025 石家庄天亮教育科技有限公司
+          备案号:冀ICP备17020003号
+        </div>
+      </div>
+    </footer>
+    <!-- 友情链接 start -->
+  </body>
+</html>

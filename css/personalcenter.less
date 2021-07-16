@@ -1,0 +1,41 @@
+@main-width: 1200px;
+@body-bg-color: #f4f4f4;
+@personalcenter-bg-color: #ffffff;
+@font-size: 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: @body-bg-color;
+}
+
+.personalcenter {
+  margin: 20px auto;
+  padding: 20px;
+  width: @main-width;
+  height: 840px;
+  border-radius: 20px;
+  background-color: @personalcenter-bg-color;
+  font-size: @font-size;
+  div {
+    margin: 40px 0;
+  }
+  .avatar {
+    img {
+      display: block;
+      margin: 40px 0;
+      width: 200px;
+      height: 200px;
+    }
+    [type="button"] {
+      border: none;
+      outline: none;
+      padding: 4px 10px;
+      background-color: #f1f1f1;
+    }
+  }
+}

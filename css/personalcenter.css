@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4f4f4;
+}
+.personalcenter {
+  margin: 20px auto;
+  padding: 20px;
+  width: 1200px;
+  height: 840px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-size: 20px;
+}
+.personalcenter div {
+  margin: 40px 0;
+}
+.personalcenter .avatar img {
+  display: block;
+  margin: 40px 0;
+  width: 200px;
+  height: 200px;
+}
+.personalcenter .avatar [type="button"] {
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+  background-color: #f1f1f1;
+}
